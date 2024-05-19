@@ -11,7 +11,7 @@ defineEmits<{ deleteTodo: [index: number] }>()
       <span>{{ todo }}</span>
       <button
         class="rounded-full p-1 bg-red-100 hover:bg-red-200"
-        v-on:click="$emit('deleteTodo', index)"
+        @click="$emit('deleteTodo', index)"
       >
         <XIcon aria-label="trash" class="w-4 h-4 text-red-400" />
       </button>

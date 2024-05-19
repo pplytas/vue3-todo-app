@@ -12,7 +12,7 @@ const addTodo = () => {
 </script>
 
 <template>
-  <form class="space-x-2" v-on:submit.prevent="addTodo">
+  <form class="space-x-2" @submit.prevent="addTodo">
     <input
       class="border border-slate-900 h-[40px] px-3 rounded-md shadow"
       type="text"
